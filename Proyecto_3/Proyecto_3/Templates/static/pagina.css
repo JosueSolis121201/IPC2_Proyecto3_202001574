@@ -4,4 +4,54 @@ body{
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(250,8,8,1) 35%, rgba(0,212,255,1) 100%);
 }
 
+header{
+    display: flex;
+    background-color: #C0392B;
+    flex-direction: row-reverse;
+    gap: 60px;
 
+
+    align-content:center;
+}
+.header-boton{
+
+    height: 50px;
+    background-color: #922B21 ;
+    padding:  10px 20px;
+    margin-right: 10px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    text-align: center;
+    border-radius: 15px;
+    color: white;
+
+}
+.header-boton:hover {
+    background-color: #EC7063; 
+    color: white;
+}
+
+
+
+
+.containerPrincipal{
+    display: flex;
+
+    margin-top: 80px;
+    justify-content:center;
+}
+
+.Entrada{
+    color: white;
+}
+
+.Salida{
+    color: white;
+}
+
+.form-control{
+
+    width: 1200px;
+    height: 20000xp;
+    
+}

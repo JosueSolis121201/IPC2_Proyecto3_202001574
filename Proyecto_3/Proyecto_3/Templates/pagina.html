@@ -14,28 +14,45 @@
     <link rel="stylesheet" href="{% static '/pagina.css' %}">
 </head>
 <body>
-  <div class="encavezado">
+  <form action="#" method="get">
+
+<header id="main-header">
+		
+
+      <button value="ayuda" name="ayuda" type="submit" class="header-boton" onclick="analizador" value="">ayuda</button>
+      <button value="peticion" name="peticion" type="submit" class="header-boton">peticiones </button>
+      <button value="cargar" name="cargar" type="submit" class="header-boton">cargar archivo</button>
+
+</header>
+
+	
+
   <div class = "containerPrincipal">
 
-    <div class="card text-dark mb-3" style="max-width: 18rem;">
-        <div class="card-header">Bienvenido</div>
-        <div class="card-body">
-            <form>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Carnet</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value = "{{carnet}}">
 
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Nombre</label>
-                  <input type="email" class="form-control" id="exampleInputEmail2" value = "{{nombre}}">
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
-        </div>
+    <div class="Entrada"><h1>Entrada</h1>
+
+
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label"></label>
+        <textarea name="entrada" rows="15" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >{{carnet}}</textarea>
+    </div>
+    <div class="Salida"><h1>Salida</h1>
+
+
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label"></label>
+        <textarea name="salida" rows="15"type="email" class="form-control" id="exampleInputEmail2" >{{nombre}}</textarea>
       </div>
+    </div>
+    </div>
+            
+                        
 
 </div>
 </div>
+
+</form>
+
 </body>
 </html>
