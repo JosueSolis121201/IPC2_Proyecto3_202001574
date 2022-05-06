@@ -17,6 +17,9 @@ def home (request):
       context["carnet"] = request.GET.get("entrada")
       context["nombre"] = estado.json()["texto"]
 
+
+    context["prueba"] = [1,2,3,4,5,6,7]
+
     
     return HttpResponse(template.render(context, request))
     

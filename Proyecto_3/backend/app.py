@@ -29,16 +29,12 @@ listaEstudiates.append({"carnet": "201800011", "nombre": "Paola"})
 class analizardor():
     def __init__(self) -> None:
         self.fecha_total=""
-
-
         self.mensajes_positivos=[]
         self.mensajes_negativos=[]
         self.mensaje_txt=[]
         self.empresas=[]
         self.servicios=[]
         self.servicios_id=[]
-        
-
         self.contador_mensajes_total=0
         self.contador_sentimientos_positivos_total=0
         self.contador_sentimientos_negativos_total=0
