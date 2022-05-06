@@ -14,6 +14,7 @@ def home (request):
     if(request.GET.get('cargar')):
       lectura = {"texto": request.GET.get("entrada")}
       estado = requests.post("http://127.0.0.1:5000/estudiante",json=lectura)
+      context["carnet"] = request.GET.get("entrada")
       context["nombre"] = estado.json()["texto"]
 
     
